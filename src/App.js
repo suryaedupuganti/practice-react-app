@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.scss";
-import Loginform from "./components/Loginform/Loginform";
+import RegisterPage from "./Pages/RegisterPage";
+
 function App() {
   return (
     <>
-      <Loginform />
+      <RegisterPage />
     </>
   );
 }
