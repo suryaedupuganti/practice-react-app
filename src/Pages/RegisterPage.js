@@ -6,7 +6,7 @@ const RegisterPage = () => {
     <div class="container full-width">
       <div class="row">
         <div class="col-sm-2">
-          <img src={ParisImage} class="img-thumbnail" alt="no picture" />
+          <img src="https://via.placeholder.com/150/0000FF/808080?Text=Digital.com" class="img-thumbnail" alt="no picture" />
           <div class="p-3 mb-2 bg-success text-white">Surya Edupuganti</div>
           <p>
             If words are used out of context, only a small separate part of what
