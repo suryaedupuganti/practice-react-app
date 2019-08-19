@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.scss';
-
+import React from "react";
+import logo from "./logo.svg";
+import "./App.scss";
+import Loginform from "./components/Loginform/Loginform";
+import Alerts from "./components/Alerts/Alerts";
+import Badge from "./components/Badge/Badge";
+import Breadcrumb from "./components/Breadcrumb/Breadcrumb";
+import Button from "./components/Button/Button";
+import ButtonGroup from "./components/ButtonGroup/ButtonGroup";
+import Card from "./components/Card/Card";
+import Carousel from "./components/Carousel/Carousel";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Welcome to our page
-        </a>
-      </header>
-    </div>
+    <>
+      <Loginform />
+      <Alerts />
+      <Badge />
+      <Breadcrumb/>
+      <Button/>
+      <ButtonGroup/>
+      <Card/>
+      <Carousel/>
+    </>
   );
 }
 
