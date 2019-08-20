@@ -105,14 +105,20 @@ const RegisterPage = () => {
               Submit
             </button>
 
-            <div>
+      <div>
               <MultipleInputs
                 label="First And Last Name"
                 placeholder1="First Name"
                 placeholder2="Last Name"
+                placeholder3="Middle Name"
                 type="text"
               />
             </div>
+            
+
+            <button type="submit" class="btn btn-primary">Click Here</button>
+
+
           </div>
         </div>
       </div>
