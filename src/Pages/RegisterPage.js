@@ -1,12 +1,19 @@
 import React from "react";
 import ParisImage from "./../assets/images/paris.jpg";
+import InputField from "../components/InputField/InputField";
+import Contact from "../components/Contact/Contact";
+import MultipleInputs from "../components/MultipleInputs/MultipleInputs";
 
 const RegisterPage = () => {
   return (
     <div class="container full-width">
       <div class="row">
         <div class="col-sm-2">
-          <img src="https://via.placeholder.com/150/0000FF/808080?Text=Digital.com" class="img-thumbnail" alt="no picture" />
+          <img
+            src="https://via.placeholder.com/150/0000FF/808080?Text=Digital.com"
+            class="img-thumbnail"
+            alt="no picture"
+          />
           <div class="p-3 mb-2 bg-success text-white">Surya Edupuganti</div>
           <p>
             If words are used out of context, only a small separate part of what
@@ -17,12 +24,10 @@ const RegisterPage = () => {
         <div class="col-sm-5">
           <div class="p-3 mb-2 bg-success text-white">User details</div>
           <div class="form-group">
-            <label for="username">First Name:</label>
-            <input
+            <InputField
+              label="First Name:"
               type="text"
-              class="form-control"
-              id="FirstName"
-              placeholder="First Name"
+              placeHolder="First Name"
               name="FirstName"
             />
 
@@ -42,26 +47,13 @@ const RegisterPage = () => {
               <option value="Female">Female</option>
               <option value="Others">Others</option>
             </select>
-
-            <div className="row">
-              <div class="col-sm-5">
-                <label for="username">Country:</label>
-                <select className="form-control">
-                  <option value="country">Select Country</option>
-                </select>
-              </div>
-              <div className="col-sm-7">
-                <label for="ContactNumber">Your Contact:</label>
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="ContactNumber"
-                  placeholder="Contact Number"
-                  name="ContactNumber"
-                />
-              </div>
-            </div>
-
+            <Contact
+              countryLabel="Country:"
+              countrySelectLabel="Select Country"
+              contactNumberLabel="Your Contact:"
+              contactNumberName="ContactNumber"
+              contactNumberPlaceHolder="Contact Number"
+            />
             <label for="username">Bio:</label>
             <textarea
               class="form-control"
@@ -73,38 +65,34 @@ const RegisterPage = () => {
         <div class="col-sm-5">
           <div class="p-3 mb-2 bg-success text-white">Account details</div>
           <div class="form-group">
-            <label for="username">Username:</label>
-            <input
+            <InputField
+              label="Username:"
               type="text"
-              class="form-control"
-              id="username"
-              placeholder="Enter your name"
+              placeHolder="Enter your name"
               name="username"
             />
-            <label for="email">Email:</label>
-            <input
+
+            <InputField
+              label="Email:"
               type="email"
-              class="form-control"
-              id="email"
-              placeholder="Enter email"
+              placeHolder="Enter email"
               name="email"
             />
-            <label for="pwd">Password:</label>
-            <input
+
+            <InputField
+              label="Password:"
               type="password"
-              class="form-control"
-              id="pwd"
-              placeholder="Enter password"
+              placeHolder="Enter password"
               name="pwd"
             />
-            <label for=" Confirmpwd">Confirm Password:</label>
-            <input
+
+            <InputField
+              label="Confirm Password:"
               type="password"
-              class="form-control"
-              id="Confirmpwd"
-              placeholder="Confirm your password"
-              name=" Confirmpwd"
+              placeHolder="Confirm your password"
+              name="Confirmpwd"
             />
+
             <div class="checkbox">
               <label>
                 <input type="checkbox" name="remember" />
@@ -116,6 +104,15 @@ const RegisterPage = () => {
             <button type="submit" class="btn btn-primary">
               Submit
             </button>
+
+            <div>
+              <MultipleInputs
+                label="First And Last Name"
+                placeholder1="First Name"
+                placeholder2="Last Name"
+                type="text"
+              />
+            </div>
           </div>
         </div>
       </div>
