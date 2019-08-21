@@ -12,15 +12,15 @@ const Loginform = () => {
             alt="no picture"
             width="150"
             height="150"
-            style={{"borderRadius":"50%"}}
+            style={{ borderRadius: "50%" }}
           />
           <b>Surya Edupuganti</b>
         </div>
         <div class="col-sm-5">
-<h3>User details</h3>
+          <h3>User details</h3>
         </div>
         <div class="col-sm-5">
-<h3>Account details</h3>
+          <h3>Account details</h3>
         </div>
       </div>
     </div>
