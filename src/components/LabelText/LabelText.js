@@ -1,10 +1,10 @@
 import React from "react";
 
-const LabelText = ({label,text}) => {
+const LabelText = ({ label, text }) => {
   return (
-    <div>
-    <label>{label}</label>
-<span>{text}</span>
+    <div className="d-flex flex-row justify-content-between">
+      <label>{label}</label>
+      <span>{text}</span>
     </div>
   );
 };

@@ -1,13 +1,15 @@
 import React from "react";
-import LabelText from './../LabelText/LabelText';
+import LabelText from "./../LabelText/LabelText";
 
-const SportDetail = ({header,text1,text2}) => {
+const SportDetail = ({ header, label1, label2, text1, text2 }) => {
   return (
-    <div>
-      <h3>{header}</h3>
-      <div>
-        <LabelText label="" text={text1} />
-        <LabelText label="" text={text2} />
+    <div className="w-100">
+      <div className="mx-auto w-100">
+        <h3>{header}</h3>
+      </div>
+      <div className="w-100 p-3">
+        <LabelText label={label1} text={text1} />
+        <LabelText label={label2} text={text2} />
       </div>
     </div>
   );
