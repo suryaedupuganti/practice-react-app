@@ -1,11 +1,12 @@
 import React from "react";
 import "./App.scss";
 import RegisterPage from "./Pages/RegisterPage";
+import PlayerPage from "./Pages/PlayerPage";
 
 function App() {
   return (
     <>
-      <RegisterPage />
+      <PlayerPage />
     </>
   );
 }
