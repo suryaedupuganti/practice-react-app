@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.scss";
 import RegisterPage from "./Pages/RegisterPage";
-import PlayerCard from "./components/PlayerCard/PlayerCard";
+import PlayerPage from "./Pages/PlayerPage";
 
 function App() {
   return (
     <>
-      <PlayerCard />
+      <PlayerPage />
     </>
   );
 }
