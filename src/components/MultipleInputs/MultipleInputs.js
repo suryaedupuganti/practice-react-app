@@ -1,6 +1,6 @@
 import React from "react";
 
-const MultipleInputs = ({ label, placeholder1,placeholder2,type }) => {
+const MultipleInputs = ({ label, placeholder1,placeholder2,text }) => {
   return (
     <div class="input-group">
       <div class="input-group-prepend">
@@ -8,8 +8,8 @@ const MultipleInputs = ({ label, placeholder1,placeholder2,type }) => {
           {label}
         </label>
       </div>
-      <input type={type} class="form-control" placeholder={placeholder1}/>
-      <input type={type} class="form-control" placeholder={placeholder2}/> 
+      <input type={text} class="form-control" placeholder={placeholder1}/>
+      <input type={text} class="form-control" placeholder={placeholder2}/> 
     </div>
   );
 };

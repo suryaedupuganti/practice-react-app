@@ -7,10 +7,10 @@ import PropsDemo from "../components/PropsDemo/PropsDemo";
 import Newgrid from "../components/Newgrid/Newgrid";
 import PropsNewLoginPage from "../components/PropsNewLoginPage/PropsNewLoginPage";
 const RegisterPage = () => {
-  const labels = ['R', 'G', 'Y'];
+  const labels = ["R", "G", "Y"];
   return (
     <div class="container full-width">
-      <div class="row w-100">
+      <div class="row">
         {/* <div class="col-sm-2">
           <img
             src="https://via.placeholder.com/150/0000FF/808080?Text=Digital.com"
@@ -117,7 +117,7 @@ const RegisterPage = () => {
               />
             </div> */}
 
-          {/* <PropsDemo 
+        {/* <PropsDemo 
           number="2"
           text1="Header text"
           text2="this is an example"         />
@@ -125,11 +125,10 @@ const RegisterPage = () => {
           <Newgrid
           Text="Header Text" 
           labels={labels}/> */}
-          <div>
-            <PropsNewLoginPage
-            placeholder1="forgot password"
-            placeholder2="Newuser"/>
-          </div>
+        <PropsNewLoginPage
+          placeholder1="forgot password"
+          placeholder2="Newuser"
+        />
       </div>
     </div>
   );
